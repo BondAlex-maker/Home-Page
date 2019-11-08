@@ -1,0 +1,303 @@
+* {
+
+    padding: 0;
+    margin: 0;
+
+}
+
+:root {
+    --main-bg-color: #FF467A;
+    --userImageContainerSize: 160px;
+}
+
+
+body {
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#pageHeader{
+background-color: white;
+box-sizing: border-box;
+padding: 10px 0;
+
+}
+
+#header{
+}
+
+
+.container{
+margin: 0 auto;
+max-width: 1270px;
+width: 100%;
+}
+
+.headerContainer{
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+padding: 0 20px;
+box-sizing: border-box;
+}
+
+.headerContainer > * {
+flex-grow: 0.5;
+}
+
+.logoContainer{
+margin-left: auto;
+}
+
+
+.headerNavContainer{
+display: flex;
+white-space: nowrap;
+
+}
+
+.navContainerOuter > nav {
+display: inline-block;
+}
+
+.navContainerOuter{
+text-align: right;
+}
+
+.headerNavContainer > a + a {
+margin-left: 20px;
+}
+
+.headerLogo{
+height: 36px;
+
+}
+
+.Picture {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-width: 1270px;
+    height: 200px;
+}
+
+.FirstPic {
+    position: absolute;
+    width: 120%;
+    height: 200px;
+    z-index: -10;
+    filter: blur(5px);
+}
+
+.SecondPic {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    z-index: -1;
+}
+
+
+
+
+
+
+/*USER INFO CONTAINER STYLES*/
+
+.containerCard{
+display: flex;
+align-items: flex-start;
+background-color: pink;
+}
+
+.container1{
+
+max-width: 250px;
+width: 100%;
+margin-left: 170px;
+}
+
+
+.userInfoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items;
+    box-sizing: border-box;
+    width: 250px;
+    height: 480px;
+
+}
+
+
+
+/*USER AVATAR CONTAINER STYLES*/
+.userImageContainer {
+    box-sizing: border-box;
+    height: var(--userImageContainerSize);
+    width: var(--userImageContainerSize);
+    border-radius: 50%;
+    background-color: red;
+    background-image: url("https://pressa.tv/uploads/posts/2017-10/1508903985_r1.jpg");
+    margin-top: calc(var(--userImageContainerSize) / 2 * -1);
+    margin-left:45px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+
+/*USER FULL NAME STYLES (NOT ALL)*/
+.userFullName {
+    text-transform: capitalize;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+.flexStart{
+margin: 0px 30px 0;
+display: flex;
+flex-direction: column;
+color: white;
+margin-top: 10px;
+font-family: sans-serif;
+
+}
+
+.score{
+color: black;
+text-transform: uppercase;
+text-align: left;
+}
+
+.badges{
+margin: 20px 0 20px;
+color: black;
+}
+
+.contactLink > h5 {
+margin-top: 50px;
+}
+
+span { font-size: 1.5em;}
+span b { font-size: 50%; }
+
+.scoreNumber{
+color: white;
+}
+
+.links{
+display: flex;
+margin-bottom: 20px;
+}
+
+
+
+
+/*FOOTER OF THE CARD SHOULD BE IN THE BOTTOM OF THE CARD*/
+.userInfoContainer > footer {
+    margin-top: auto;
+    background-color: #cf3b6d;
+    width: 100%;
+}
+
+.userInfoContainer > footer > a{
+color: white;
+padding: 5px 70px;
+text-decoration: none;
+
+}
+
+
+
+
+/*USER CONTACTS IMITATION*/
+.contactLink {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: dodgerblue;
+    cursor: pointer;
+}
+
+.contactLink + .contactLink {
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+
+.posts {
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    margin-top: -400px;
+    margin-left: 500px;
+    font-weight: 900;
+}
+
+.likedPosts {
+    margin-top: -20px;
+    margin-left: 640px;
+    font-weight: 700;
+}
+
+.savedPosts {
+    margin-left: 800px;
+    margin-top: -16px;
+    font-weight: 700;
+}
+
+.textSets {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: gray;
+    letter-spacing: 0.1px;
+}
+
+hr {
+    width: 900px;
+    margin-left: 500px;
+    margin-top: 8px;
+    opacity: 0.5;
+}
+
+.secondLine {
+    margin-top: -2px;
+    width: 95px;
+    height: 4px;
+    line-height: 2px;
+    background-color: deeppink;
+
+}
+
+.border{
+width: 400px;
+height: 300px;
+border: 1px solid green;
+box-sizing: border-box;
+margin-left: 500px;
+margin-top: 50px;
+display: flex;
+flex-direction: column;
+}
+
+.userMessageImageContainer{
+width: 60px;
+height: 60px;
+border-radius: 50%;
+border: 1px solid red;
+}
+
+.alignItemsHelper{
+display: flex;
+align-items: center;
+}
